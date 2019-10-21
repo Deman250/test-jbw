@@ -39,7 +39,11 @@
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.6.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-validate": "^2.0.0",
+    "jqueryui": "^1.11.1"
+  },
   "lint-staged": {
     "linters": {
       "*.scss": [
