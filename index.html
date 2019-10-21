@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="content header-content">
+        <p class="header-text">Lorem ipsum dolor sit amet donec voluptatem ipsum dolor sit amet donec voluptatem</p>
+        <span id="closeBlock" class="close-block">&times;</span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="content main-content">
+        <div class="text">
+          <h2 class="main-header">
+            Professional Сustom
+            Service Just <span class="yellow">for You</span>
+          </h2>
+          <p>
+            We can do <span class="yellow">anything</span>
+          </p>
+        </div>
+        <div class="form" id="form">
+          <h2 class="form-header">Calculate the price</h2>
+          <p class="form-text">Choose level</p>
+          <select name="levels" class="levels">
+            <option value="10.99" selected>Hardcore</option>
+            <option value="7.99">Medium</option>
+            <option value="4.99">Light</option>
+          </select>
+
+          <p class="form-text">How many</p>
+          <div class="how-many">
+            <div class="counter">
+              <button id="decrement" class="decrement">-</button>
+              <div id="number" >1</div>
+              <button id="increment" class="increment">+</button>
+            </div>
+            <div class="result">
+              <div id="sum" class="sum">$10.99</div>
+              <button id="popUpBtn" class="pop-up-button">Pop Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popUp" class="popup">
+        <div class="popup-content">
+          <span id="closePopUp" class="popup-close">&times;</span>
+          <form action="" class="popup-form" id="popUpForm" method="GET">
+            <h2 class="popup-header">
+              Ask us how we can help you
+            </h2>
+            <p class="popup-text popup-text-header">Lorem ipsum dolor sit amet</p>
+            <label>
+              <p class="popup-text">Enter your name</p>
+              <input id="userName" class="popup-input popup-input-name" type="text" name="name">
+            </label>
+            <label>
+              <p class="popup-text">Enter your email</p>
+              <input id="userEmail" class="popup-input popup-input-mail" type="email" name="email" placeholder="example@gmail.com">
+            </label>
+            <label>
+              <p class="popup-text">Your phone</p>
+              <span class="plus">+</span>
+              <select id="country" name="country" class="country">
+                <option value="" selected disabled></option>
+                <option value="38" data-imagesrc="./images/FLAG.png">🇺🇦</option>
+                <option value="73">ru</option>
+                <option value="48">🇵🇱</option>
+              </select>
+              <input id="userPhone" class="popup-input popup-input-phone" type="text" name="phone" >
+            </label>
+          </form>
+        </div>
+      </div>
+
+      <div id="modal" class="modal">
+        <span id="closeModal" class="modal-close">&times;</span>
+        <div class="modal-content">
+          <img src="./images/envelope.svg" class="modal-image" alt="envelope image">
+          <h2 class="modal-header">Thank You!</h2>
+          <p class="modal-text">Please check your email!</p>
+          <button id="modalBtn" class="modal-button">Ok, tnx</button>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+  </body>
+</html>
