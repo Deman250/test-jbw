@@ -40,6 +40,7 @@
     "stylelint-scss": "^3.6.1"
   },
   "dependencies": {
+    "intl-tel-input": "^16.0.6",
     "jquery": "^3.4.1",
     "jquery-validate": "^2.0.0",
     "jqueryui": "^1.11.1"
