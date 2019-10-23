@@ -304,6 +304,19 @@ div.ui-dialog {
   width: 460px !important;
 }
 
+div.iti__selected-flag {
+  align-items: flex-start;
+  padding-top: 12px;
+
+  .iti__arrow {
+    margin-top: 5px;
+  }
+}
+
+div.iti-arrow {
+  margin-top: 5px;
+}
+
 div.popup-content {
   margin: 0;
   overflow: hidden;
