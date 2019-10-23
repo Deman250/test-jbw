@@ -136,6 +136,6 @@ $(document).ready(function() {
   });
 
   $('#userName').keyup(function() {
-    this.value = this.value.replace(/[^а-яё|\W]/i, '');
+    this.value = this.value.replace(/[^а-яё|\W]+/i, '');
   });
 });
