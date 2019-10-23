@@ -254,6 +254,17 @@ div.ui-dialog {
   padding: 0;
   width: 460px !important; }
 
+div.iti__selected-flag {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 12px; }
+  div.iti__selected-flag .iti__arrow {
+    margin-top: 5px; }
+
+div.iti-arrow {
+  margin-top: 5px; }
+
 div.popup-content {
   margin: 0;
   overflow: hidden;
