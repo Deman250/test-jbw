@@ -35,19 +35,25 @@ body {
   background-color: #60a75e;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 285px; }
+  padding-top: 282px; }
+  .main .text {
+    font-family: "Roboto Mono", sans-serif;
+    width: 580px;
+    padding-left: 3px; }
   .main-header {
-    margin: 0;
-    font-size: 46px;
+    margin: -5px 0 0;
+    font-size: 48px;
     line-height: 52px;
-    font-weight: 500;
-    width: 450px; }
+    font-weight: 500; }
+  .main-text {
+    font-size: 22px; }
   .main .yellow {
     color: #ffea00; }
   .main .form {
     color: black;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: "Lato", sans-serif;
     width: 400px;
     height: 250px;
     padding: 30px;
@@ -55,7 +61,7 @@ body {
     -webkit-box-shadow: 2px 5px 20px 0 rgba(0, 0, 0, 0.75);
             box-shadow: 2px 5px 20px 0 rgba(0, 0, 0, 0.75); }
     .main .form-header {
-      margin: 0 0 25px;
+      margin: 0 0 21px;
       font-size: 20px;
       line-height: 20px; }
     .main .form-text {
@@ -64,7 +70,8 @@ body {
       font-size: 16px;
       line-height: 16px; }
     .main .form .levels {
-      margin-bottom: 20px;
+      font-family: "Lato", sans-serif;
+      margin-bottom: 18px;
       width: 340px;
       height: 40px;
       border: 1px solid #a1a1a1;
@@ -78,6 +85,7 @@ body {
       .main .form .levels:hover, .main .form .levels:focus {
         outline: 1px solid #60a75e; }
     .main .form .how-many {
+      font-family: "Lato", sans-serif;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -164,25 +172,28 @@ body {
     margin: 20px 20px 17px 420px;
     cursor: pointer; }
   .popup-header {
+    font-family: "Lato", sans-serif;
     font-size: 20px;
-    margin: 0 0 12px;
+    font-weight: 400;
+    margin: 0 0 10px;
     text-align: center; }
   .popup-text {
+    font-family: "Lato", sans-serif;
     color: #adadad;
     font-size: 16px;
-    margin: 17px 0 10px; }
+    margin-bottom: 10px; }
   .popup-text-header {
     text-align: center;
-    margin-bottom: 17px; }
+    margin: 10px 0 18px; }
   .popup-form {
-    margin: 0 60px; }
+    margin: 0 59px; }
   .popup-input {
     width: 340px;
     height: 40px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 1px solid #bababa;
-    outline-color: #60a75e;
+    outline: none;
     padding-left: 40px; }
     .popup-input:hover, .popup-input:focus {
       border: 1px solid #60a75e; }
@@ -193,31 +204,8 @@ body {
       background: no-repeat url(../images/email_icon.svg);
       background-position: 12px 13px; }
     .popup-input-phone {
-      padding-left: 90px; }
-  .popup .country {
-    display: block;
-    width: 68px;
-    height: 38px;
-    margin-top: -40px;
-    position: relative;
-    top: 39px;
-    left: 1px;
-    border: none;
-    border-right: 1px solid #bababa;
-    padding-left: 5px;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background-image: url(../images/drop_down_icon.svg);
-    background-repeat: no-repeat;
-    background-position: 40px 16px; }
-  .popup .plus {
-    display: block;
-    width: 20px;
-    margin-top: -25px;
-    position: relative;
-    top: 28px;
-    left: 77px; }
+      padding-left: 90px;
+      z-index: 2; }
 
 .modal {
   display: none;
@@ -268,9 +256,23 @@ div.ui-dialog {
 
 div.popup-content {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 30px; }
+
+div.iti__selected-flag {
+  outline: none; }
+
+ul.iti__country-list {
+  position: relative;
+  bottom: 150px;
+  width: 55px;
+  max-height: 120px;
+  overflow: hidden;
+  overflow-y: visible; }
+
+div.ui-widget input {
+  font-family: "Lato", sans-serif;
+  font-size: 16px; }
 
 div.ui-dialog .ui-dialog-buttonpane {
   border: none;
@@ -285,7 +287,7 @@ div.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   background: #fff;
   width: 145px;
   height: 40px;
-  margin: 10px 0 30px 155px; }
+  margin: 0 0 30px 155px; }
 
 .ui-button span.ui-button-text {
   display: block;

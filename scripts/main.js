@@ -27,6 +27,19 @@ $(document).ready(function() {
     $('#sum').text('$' + counter * 10.99);
   });
 
+  $('#userPhone').intlTelInput({
+    initialCountry: 'ua',
+    geoIpLookup: function(callback) {
+      $.get('https://ipinfo.io', function() {}, 'jsonp')
+        .always(function(resp) {
+          const countryCode = (resp && resp.country) ? resp.country : '';
+          callback(countryCode);
+        });
+    },
+    utilsScript:
+  'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/utils.js',
+  });
+
   $('#popUpForm').validate({
     rules: {
       name: {
@@ -105,16 +118,6 @@ $(document).ready(function() {
       });
     },
   });
-
-  $('#country').change(function() {
-    if ($('#userPhone').val().length > 2) {
-      $('#userPhone').val($('#country').val() + $('#userPhone').val().slice(2));
-    } else {
-      $('#userPhone').val($('#country').val() + $('#userPhone').val());
-    }
-  });
-
-  // $('#country').ddslick();
 
   $('#popUpBtn').click(function() {
     $('#popUp').dialog('open');
