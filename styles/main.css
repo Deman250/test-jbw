@@ -315,7 +315,8 @@ div.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   outline-color: #60a75e;
   padding-top: 8px; }
   .ui-button span.ui-button-text:hover, .ui-button span.ui-button-text:focus {
-    border: 1px solid #60a75e; }
+    border: 1px solid #60a75e;
+    outline-color: #60a75e; }
 
 .ui-dialog-titlebar {
   display: none; }
@@ -323,6 +324,10 @@ div.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
 div.ui-widget-overlay {
   background: black;
   opacity: 0.7; }
+
+label.error {
+  color: #9e3d3d;
+  font-size: 15px; }
 
 @media (max-width: 920px) {
   div.ui-dialog {
