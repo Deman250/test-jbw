@@ -375,6 +375,7 @@ div.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   &:hover,
   &:focus {
     border: 1px solid #60a75e;
+    outline-color: #60a75e;
   }
 }
 
@@ -385,6 +386,11 @@ div.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
 div.ui-widget-overlay {
   background: black;
   opacity: 0.7;
+}
+
+label.error {
+  color: rgb(158, 61, 61);
+  font-size: 15px;
 }
 
 @media (max-width: 920px) {
