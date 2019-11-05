@@ -306,6 +306,7 @@ div.ui-dialog {
 
 div.iti__selected-flag {
   align-items: flex-start;
+  outline: none;
   padding-top: 12px;
 
   .iti__arrow {
@@ -321,10 +322,6 @@ div.popup-content {
   margin: 0;
   overflow: hidden;
   padding-bottom: 30px;
-}
-
-div.iti__selected-flag {
-  outline: none;
 }
 
 ul.iti__country-list {
