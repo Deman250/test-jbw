@@ -258,6 +258,7 @@ div.iti__selected-flag {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  outline: none;
   padding-top: 12px; }
   div.iti__selected-flag .iti__arrow {
     margin-top: 5px; }
@@ -269,9 +270,6 @@ div.popup-content {
   margin: 0;
   overflow: hidden;
   padding-bottom: 30px; }
-
-div.iti__selected-flag {
-  outline: none; }
 
 ul.iti__country-list {
   position: relative;
